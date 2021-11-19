@@ -1,9 +1,50 @@
-
-
 .background img{
   width: 100%;
 }
 
 .carousel .carousel-slider{
   width : 100%;
+}
+
+.divider{
+  margin-top: 0;
+}
+
+.user-view a span{
+  background-color: rgba(10, 10, 10, 0.7);
+}
+
+h1, h2{
+  color: white;
+  text-align: center;
+}
+
+.parallax{
+  filter: blur(4px);
+}
+
+.parallax-container{
+  overflow: visible;
+}
+
+.collapsible{
+  margin: 0;
+  background-color: white;
+}
+
+.row .col{
+  padding: 0;
+}
+
+.collapsible-header{
+  text-align: center;
+  display: block;
+}
+
+.collapsible-header:active{
+  background-color: grey;
+}
+
+.carousel{
+  max-width: 100%;
 }

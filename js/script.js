@@ -1,26 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
-   var elems = document.querySelectorAll('.sidenav');
-   var instances = M.Sidenav.init(elems, options);
- });
+$(document).ready(function(){
+ $('.sidenav').sidenav();
+});
 
- $(document).ready(function(){
-   $('.sidenav').sidenav();
- });
- var instance = M.Carousel.init({
-     fullWidth: true
-   });
+var instance = M.Carousel.init({
+ fullWidth: true
+});
 
-   // Or with jQuery
+$('.carousel.carousel-slider').carousel({
+ fullWidth: false
+});
 
-   $('.carousel.carousel-slider').carousel({
-     fullWidth: false
-   });
+$(document).ready(function(){
+  $('.modal').modal();
+});
 
-   document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.modal');
-      var instances = M.Modal.init(elems, options);
-    });
-    $(document).ready(function(){
-        $('.modal').modal();
-      });
-            
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
+
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true,
+  indicators: true
+});
