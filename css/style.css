@@ -1,22 +1,57 @@
-header, main, footer {
-  padding-left: 300px;
+.background img{
+  width: 100%;
 }
 
-@media only screen and (max-width : 992px) {
-  header, main, footer {
-    padding-left: 0;
-  }
+.carousel .carousel-slider{
+  width : 100%;
 }
 
-.carousel{
-  margin : 0 auto;
+.divider{
+  margin-top: 0;
 }
 
-.parallax-container{
-  position: relative;
-  overflow: visible;
+.user-view a span{
+  background-color: rgba(10, 10, 10, 0.7);
+}
+
+h1, h2{
+  color: white;
+  text-align: center;
 }
 
 .parallax{
+  filter: blur(4px);
+}
+
+.parallax-container{
+  overflow: visible;
+}
+
+.collapsible{
+  margin: 0;
+  background-color: white;
+}
+
+.row .col{
+  padding: 0;
+}
+
+.collapsible-header{
+  text-align: center;
+  display: block;
+}
+
+.collapsible-header:active{
+  background-color: grey;
+}
+
+.carousel{
+  max-width: 100%;
+}
+
+.rand{
+  width: 1%;
+  height: 1vh;
   position: relative;
+  z-index: 100;
 }
