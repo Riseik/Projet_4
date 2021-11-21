@@ -2,8 +2,27 @@
   width: 100%;
 }
 
-.carousel .carousel-slider{
-  width : 100%;
+.sidenav .active, .sidenav .active:hover{
+  background-color: rgba(20, 20, 20, 0.2);
+}
+
+nav{
+  background-color: #757575;
+}
+
+nav a.sidenav-trigger{
+  display: block;
+}
+
+ul a.btn{
+  background-color: #fbc02d;
+  position: absolute;
+  top: 92vh;
+  text-align: center;
+}
+
+ul a.btn:hover{
+  background-color: #f9a825;
 }
 
 .divider{
@@ -14,44 +33,42 @@
   background-color: rgba(10, 10, 10, 0.7);
 }
 
-h1, h2{
+h1{
   color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2{
+  color: #fbc02d;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3{
+  color: #fbc02d;
   text-align: center;
 }
 
 .parallax{
-  filter: blur(4px);
+  filter: blur(6px);
 }
 
-.parallax-container{
-  overflow: visible;
-}
-
-.collapsible{
-  margin: 0;
-  background-color: white;
-}
-
-.row .col{
-  padding: 0;
-}
-
-.collapsible-header{
+.col{
   text-align: center;
-  display: block;
-}
-
-.collapsible-header:active{
-  background-color: grey;
 }
 
 .carousel{
-  max-width: 100%;
+  width: 100%;
 }
 
 .rand{
-  width: 1%;
-  height: 1vh;
-  position: relative;
+  position: absolute;
   z-index: 100;
+  opacity: 0;
+  right: 0;
+}
+
+.modal{
+  width: 70%;
 }

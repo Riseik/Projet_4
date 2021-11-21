@@ -26,8 +26,8 @@ $('.carousel.carousel-slider').carousel({
 $('.new_pos').click(function() {
   var bodyWidth = document.body.clientWidth;
   var bodyHeight = document.body.clientHeight;
-  var randPosX = Math.floor((Math.random()*bodyWidth));
-  var randPosY = Math.floor((Math.random()*bodyHeight));
+  var randPosX = Math.floor((Math.random()*(bodyWidth-33)));
+  var randPosY = Math.floor((Math.random()*(bodyHeight-73)));
   $('.rand').css('opacity', 1);
   $('.rand').css('transition', 'all 1s');
   $('#rand_pos').css('left', randPosX);
